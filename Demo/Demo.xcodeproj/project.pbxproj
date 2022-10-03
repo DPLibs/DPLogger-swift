@@ -11,6 +11,12 @@
 		E2E541EA28EAD41C007D88C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E541E928EAD41C007D88C0 /* ViewController.swift */; };
 		E2E541EF28EAD41E007D88C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E541EE28EAD41E007D88C0 /* Assets.xcassets */; };
 		E2E541F228EAD41E007D88C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E541F028EAD41E007D88C0 /* LaunchScreen.storyboard */; };
+		E2EC520E28EB5B39006397B2 /* DPLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC520D28EB5B39006397B2 /* DPLogger.swift */; };
+		E2EC521028EB6E3A006397B2 /* DPLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC520F28EB6E3A006397B2 /* DPLoggerProtocol.swift */; };
+		E2EC521228EB6E4F006397B2 /* DPNormalLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC521128EB6E4F006397B2 /* DPNormalLogger.swift */; };
+		E2EC521428EB6E5D006397B2 /* DPParametersLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC521328EB6E5C006397B2 /* DPParametersLogger.swift */; };
+		E2EC521628EB6E6A006397B2 /* DPLoggerParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC521528EB6E6A006397B2 /* DPLoggerParameter.swift */; };
+		E2EC521828EB73EF006397B2 /* DPErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC521728EB73EF006397B2 /* DPErrorLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		E2E541F128EAD41E007D88C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2E541F328EAD41E007D88C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E541FA28EAD4B5007D88C0 /* DPLogger-swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "DPLogger-swift"; path = ..; sourceTree = "<group>"; };
+		E2EC520D28EB5B39006397B2 /* DPLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPLogger.swift; sourceTree = "<group>"; };
+		E2EC520F28EB6E3A006397B2 /* DPLoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPLoggerProtocol.swift; sourceTree = "<group>"; };
+		E2EC521128EB6E4F006397B2 /* DPNormalLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPNormalLogger.swift; sourceTree = "<group>"; };
+		E2EC521328EB6E5C006397B2 /* DPParametersLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPParametersLogger.swift; sourceTree = "<group>"; };
+		E2EC521528EB6E6A006397B2 /* DPLoggerParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPLoggerParameter.swift; sourceTree = "<group>"; };
+		E2EC521728EB73EF006397B2 /* DPErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPErrorLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,12 @@
 		E2E541FB28EAD4C7007D88C0 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				E2EC520D28EB5B39006397B2 /* DPLogger.swift */,
+				E2EC520F28EB6E3A006397B2 /* DPLoggerProtocol.swift */,
+				E2EC521128EB6E4F006397B2 /* DPNormalLogger.swift */,
+				E2EC521328EB6E5C006397B2 /* DPParametersLogger.swift */,
+				E2EC521528EB6E6A006397B2 /* DPLoggerParameter.swift */,
+				E2EC521728EB73EF006397B2 /* DPErrorLogger.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -149,8 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EC520E28EB5B39006397B2 /* DPLogger.swift in Sources */,
 				E2E541EA28EAD41C007D88C0 /* ViewController.swift in Sources */,
+				E2EC521628EB6E6A006397B2 /* DPLoggerParameter.swift in Sources */,
 				E2E541E628EAD41C007D88C0 /* AppDelegate.swift in Sources */,
+				E2EC521828EB73EF006397B2 /* DPErrorLogger.swift in Sources */,
+				E2EC521428EB6E5D006397B2 /* DPParametersLogger.swift in Sources */,
+				E2EC521028EB6E3A006397B2 /* DPLoggerProtocol.swift in Sources */,
+				E2EC521228EB6E4F006397B2 /* DPNormalLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
