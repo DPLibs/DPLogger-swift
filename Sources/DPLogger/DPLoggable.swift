@@ -63,4 +63,18 @@ public extension DPLoggable {
         self.log(debugString: debugString)
     }
     
+    func log(urlRequest: URLRequest, functionName: String = #function) {
+        let title = DPLoggerTitleDebugString(
+            className: String(describing: Self.self),
+            functionName: functionName
+        )
+        
+        let debugString = DPLoggerURLRequestDebugString(
+            title: title,
+            urlRequest: urlRequest
+        )
+        
+        self.log(debugString: debugString)
+    }
+    
 }
