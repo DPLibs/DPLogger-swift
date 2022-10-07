@@ -24,7 +24,11 @@ public struct DPLoggerTitleDebugString {
 extension DPLoggerTitleDebugString: CustomDebugStringConvertible {
     
     public var debugDescription: String {
-        [self.className, self.functionName]
+        [
+            self.className,
+            Date().debugDescription,
+            self.functionName
+        ]
             .filter({ !$0.isEmpty })
             .map({ "[\($0)]" })
             .joined(separator: " - ")
